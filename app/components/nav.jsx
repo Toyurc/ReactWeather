@@ -2,7 +2,7 @@ var React = require('react')
 var {Link, IndexLink} = require('react-router')
 var nav = React.createClass({
   onSearch: function (e) {
-    e.preventDefault();
+    e.preventDefault()
     alert('not yet wired up')
   },
   render: function () {
