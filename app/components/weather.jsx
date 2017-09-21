@@ -21,16 +21,18 @@ var weather = React.createClass({
     }, function (errorMessage) {
       console.log(errorMessage)
       that.setState({isLoading: false})
+      console.log(errorMessage)
       alert('city doesnt exist')
     })
       .catch((err) => {
         console.log(err)
+        alert('city doesnt exist')
       })
   },
 
   render: function () {
-    var { isLoading, temp, location} = this.state
-    function renderMEssage () {
+    var {isLoading, temp, location} = this.state
+    function renderMessage () {
       if (isLoading) {
         return <h4>getting your weather...</h4>
       } else if (temp && location) {
@@ -44,7 +46,7 @@ var weather = React.createClass({
               weather component
         </h3>
         <WeatherForm onSearch={this.handleSearch}/>
-        {renderMEssage()}
+        {renderMessage()}
       </div>
     )
   }

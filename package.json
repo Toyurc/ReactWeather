@@ -34,7 +34,6 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.3.0",
     "eslint-plugin-standard": "^3.0.1"
-
   },
   "repository": {
     "type": "git",
