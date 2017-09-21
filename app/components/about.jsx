@@ -3,9 +3,11 @@ var React = require('react')
 var about = (props) => {
   'use strict'
   return (
-    <h3>
-      about component
-    </h3>
+    <div>
+      <h3>About</h3>
+      <p>Welcome to the about page!</p>
+    </div>
+
   )
 }
 
